@@ -25,6 +25,7 @@ body {
 header {
   background-color: #18294f;
   padding-bottom: 1rem;
+  color: #fff;
 }
 
 h1 {
@@ -32,6 +33,8 @@ h1 {
   font-weight: bold;
   color: #fff;
   text-align: center;
+  margin: 0;
+  padding: .7rem;
 }
 
 nav ul {
@@ -40,24 +43,54 @@ nav ul {
   margin: 0;
 }
 
-li a {
+li {
+  padding: .5rem;
+}
+
+nav a {
   text-decoration: none;
   color: #6c8fe0;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
 
-  li a {
-    font-size: 110%;
+  nav a {
+    font-size: 100%;
     line-height: 1.3;
   }
+
 }
 
+
 @media only screen and (min-width: 38em) {
+
+  nav a {
+    font-size: 110%;
+    line-height: 1.4;
+    float: right;
+    width: 50%;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
+
+  nav a {
+    font-size: 120%;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (min-width: 90em) {
+
+  nav a {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
 }
